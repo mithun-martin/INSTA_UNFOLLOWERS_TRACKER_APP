@@ -88,6 +88,6 @@ def upload_file():
 # os.path.join(...) → builds a path string (good for cross-platform)
 # We just call them temp_followers.html and temp_following.html
 
-# 📌 Run app in debug mode
+
 if __name__ == "__main__":
     app.run(debug=True)
