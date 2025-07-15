@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Results - Not Following Back</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <div class="max-w-3xl mx-auto mt-16 p-8 bg-white rounded-2xl shadow-2xl border border-pink-300">
+        <h1 class="text-4xl font-bold text-center text-pink-700 mb-6">
+            ❌ Not Following You Back
+        </h1>
+
+        {% if not_following_back %}
+            <ul class="list-disc list-inside space-y-2 text-blue-800 font-medium">
+                {% for user in not_following_back %}
+                    <li>
+                        <a href="https://instagram.com/{{ user }}" target="_blank" class="hover:text-pink-600">
+                            {{ user }}
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p class="text-green-600 font-semibold text-center text-xl">🎉 Everyone follows you back! You're loved 😄</p>
+        {% endif %}
+
+        <div class="mt-10 text-center">
+            <a href="/" class="bg-yellow-500 hover:bg-yellow-600 text-white font-semibold px-6 py-2 rounded-full shadow-md">
+                🔁 Check Again
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>

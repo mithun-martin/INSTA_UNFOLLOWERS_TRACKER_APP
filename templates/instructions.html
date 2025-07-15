@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Start - Instagram Follower Tool</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-pink-700 via-purple-800 to-blue-900 text-white min-h-screen flex flex-col items-center justify-start py-10">
+
+    <!-- 🌆 Hero Banner Image with App Name -->
+    <div class="relative w-full max-w-4xl mb-8">
+    <img src="{{ url_for('static', filename='phone.jpg') }}"
+     alt="Banner Image"
+     class="w-full h-64 object-cover rounded-xl shadow-lg">
+        <div class="absolute inset-0 bg-black bg-opacity-40 rounded-xl flex items-center justify-center">
+            <h1 class="text-4xl font-bold text-yellow-300 drop-shadow-lg">📱 Insta Follower Analyzer</h1>
+        </div>
+    </div>
+
+    <!-- 📋 Instruction Box -->
+    <div class="bg-white bg-opacity-10 backdrop-blur-md p-8 rounded-xl shadow-2xl w-full max-w-3xl">
+        <h2 class="text-2xl font-bold text-yellow-200 mb-4 text-center">📝 How to Use:</h2>
+        <ol class="list-decimal list-inside space-y-3 text-pink-100 text-lg leading-relaxed">
+            <li>Open your Instagram profile on a computer browser.</li>
+            <li>Click on <b>More</b> → <b>Your Activity</b> → <b>Download Your Information</b>.</li>
+            <li>Select **HTML format**, and submit the request.</li>
+            <li>You will receive an email link to download your data.</li>
+            <li>Download and unzip the file.</li>
+            <li>Open the folder <code>followers_and_following/</code>.</li>
+            <li>Get the files:
+                <ul class="ml-6 list-disc">
+                    <li><code>followers.html</code></li>
+                    <li><code>following.html</code></li>
+                </ul>
+            </li>
+            <li>Next, upload both files in the tool!</li>
+        </ol>
+
+        <!-- 🔗 Go to Upload Form -->
+        <div class="mt-8 text-center">
+            <a href="/upload"
+               class="inline-block px-6 py-3 bg-yellow-400 text-black font-bold rounded-full hover:bg-yellow-300 transition-all shadow-lg">
+                🚀 Let's Get Started
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
