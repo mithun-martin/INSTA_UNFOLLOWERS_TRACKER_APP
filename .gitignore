@@ -1,0 +1,27 @@
+# Ignore Python cache files
+__pycache__/
+*.pyc
+
+# Ignore virtual environment folder
+venv/
+
+# Ignore database files
+*.db
+
+# Ignore environment variables / secret config files
+.env
+
+# macOS system files
+.DS_Store
+
+# Ignore Heroku logs
+*.log
+
+# Ignore VSCode config files (optional)
+.vscode/
+
+# Ignore local SQLite databases
+instance/
+
+# Ignore migrations (if using Flask-Migrate)
+migrations/
